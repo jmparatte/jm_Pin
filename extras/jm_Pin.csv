@@ -1,0 +1,13 @@
+Mode;State;Voltage;Input;Output;Pull-Up;Open-Drain;N-FET;P-FET;Inv;Dir
+;;;;;;;;;;
+INPUT;LOW;0V;0;;;;;;0;0
+;HIGH;+5V;1;;;;;;0;0
+;;;;;;;;;;
+OUTPUT;LOW;0V;;0;;;;;0;1
+;HIGH;+5V;;1;;;;;0;1
+;;;;;;;;;;
+INPUT_PULLUP;LOW;+5V;0;;1;;;;1;0
+;HIGH;0V;1;;1;;;;1;0
+;;;;;;;;;;
+OPEN_DRAIN;LOW;+5V;;0;;1;1;;1;1
+;HIGH;0V;;1;;1;1;;1;1
