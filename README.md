@@ -3,9 +3,10 @@
 
 ### Revisions
 
-2017-10-17: 1.0.1 - Adding supersede(). Updating setup(), output(), input().
-
-2017-09-05: 1.0.0 - Initial commit.
+```
+2017-10-17: v1.0.1 - Adding supersede(). Updating setup(), input(), output().
+2017-09-05: v1.0.0 - Initial commit.
+```
 
 ## Direct or Inverted Logic
 
