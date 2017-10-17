@@ -13,12 +13,13 @@ jm_Pin		KEYWORD1
 #######################################
 setup		KEYWORD2
 input		KEYWORD2
+output		KEYWORD2
 on		KEYWORD2
 off		KEYWORD2
-output		KEYWORD2
 toogle		KEYWORD2
 number		KEYWORD2
 mode		KEYWORD2
+state		KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

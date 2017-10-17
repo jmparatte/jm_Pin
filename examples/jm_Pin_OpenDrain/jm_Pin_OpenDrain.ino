@@ -1,5 +1,5 @@
 /*
-	jm_OD.ino demonstrates the capability of emulating Open-Drain on Arduino pins.
+	jm_Pin_OpenDrain.ino demonstrates the capability of emulating Open-Drain on Arduino pins.
 	Copyright (c) 2017 Jean-Marc Paratte.  All right reserved.
 
 	A LED is connected between the "emulated OD pin" and the +5V. The LED is
@@ -29,9 +29,8 @@
 
 jm_Pin Pin4(4, OPEN_DRAIN);
 
-bool state = false;
-word time0 = 0;
-#define time1 1000
+word time0;
+#define time1 1000 // milliseconds
 
 void setup()
 {
@@ -42,11 +41,20 @@ void setup()
 
 void loop()
 {
-	state = !state;
-	Pin4.output(state);
+	Pin4.toggle(); // toggle the Pin4 logical output state
+	// The push button has not effect on the Pin4 logical output state
 
 	do
-		digitalWrite(13, Pin4.input());
+#if 1
+		digitalWrite(13, Pin4.state()); // show the Pin4 logical output state
+		// The push button has not effect on the Pin4 logical output state.
+		// The LED13 blinks at 0.5Hz.
+		// The Pin4 LED displays the OR-Wired logical state.
+#else
+		digitalWrite(13, Pin4.input()); // show the Pin4 Or-Wired state (Pin4 OR button)
+		// The push button is OR-Wired with the Pin4 logical output state.
+		// The LED13 and Pin4 LED display together the OR-Wired logical state.
+#endif
 	while (((word)millis() - time0) < time1);
 
 	time0 += time1;

@@ -1,9 +1,11 @@
 
 # jm_Pin - Allows digital emulated modes like Open-Drain
 
-### Revision
+### Revisions
 
-2017-09-05: 1.0.0
+2017-10-17: 1.0.1 - Adding supersede(). Updating setup(), output(), input().
+
+2017-09-05: 1.0.0 - Initial commit.
 
 ## Direct or Inverted Logic
 
@@ -42,7 +44,7 @@ These modes are activ `HIGH` when pin is `0V` and activ `LOW` when pin is `+5V`.
 
 	#include <jm_Pin.h>
 	
-	jm_Pin pin4(4, OPEN_DRAIN);
+	jm_Pin Pin4(4, OPEN_DRAIN);
 	
 	bool state = false;
 	word time0 = 0;
@@ -57,10 +59,10 @@ These modes are activ `HIGH` when pin is `0V` and activ `LOW` when pin is `+5V`.
 	void loop()
 	{
 		state = !state;
-		pin4.output(state);
+		Pin4.output(state);
 	
 		do
-			digitalWrite(13, pin4.input());
+			digitalWrite(13, Pin4.input());
 		while ((word)millis() - time0 <= 500);
 	
 		time0 += 500;
