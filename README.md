@@ -4,7 +4,7 @@
 ### Revisions
 
 ```
-2017-10-17: v1.0.1 - Adding supersede(). Updating setup(), input(), output().
+2017-10-18: v1.0.2 - Add supersede(). Update setup(), input(), output().
 2017-09-05: v1.0.0 - Initial commit.
 ```
 
