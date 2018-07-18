@@ -4,6 +4,7 @@
 ### Revisions
 
 ```
+2018-07-18: v1.0.3 - Add port_register() to expand digital pins with various extra ports like I2C PCF8574.
 2017-10-18: v1.0.2 - Add supersede(). Update setup(), input(), output().
 2017-09-05: v1.0.0 - Initial commit.
 ```

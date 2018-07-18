@@ -6,26 +6,26 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-jm_Pin		KEYWORD1
+jm_Pin	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-setup		KEYWORD2
-input		KEYWORD2
-output		KEYWORD2
-on		KEYWORD2
-off		KEYWORD2
-toogle		KEYWORD2
-number		KEYWORD2
-mode		KEYWORD2
-state		KEYWORD2
+setup	KEYWORD2
+input	KEYWORD2
+output	KEYWORD2
+on	KEYWORD2
+off	KEYWORD2
+toogle	KEYWORD2
+number	KEYWORD2
+mode	KEYWORD2
+state	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
 #######################################
 
-#INPUT		LITERAL1
-#OUTPUT		LITERAL1
+#INPUT	LITERAL1
+#OUTPUT	LITERAL1
 #INPUT_PULLUP	LITERAL1
 OPEN_DRAIN	LITERAL1
